@@ -29,6 +29,14 @@ class MainScreen extends StatelessWidget {
                           .signInAnonymously();
                     },
                   ),
+                // if (snapshot.data == null || snapshot.data.isAnonymous)
+                //   GestureDetector(
+                //     child: Icon(Icons.login),
+                //     onTap: () async {
+                //       signInWithGoogle();
+                //     },
+                //   ),
+                // SizedBox(width: 10),
                 if (snapshot.data == null || snapshot.data.isAnonymous)
                   GestureDetector(
                     child: Icon(Icons.login),
