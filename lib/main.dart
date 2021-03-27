@@ -6,8 +6,19 @@ void main() {
   runApp(MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
+  @override
+  _MyAppState createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   final Future<FirebaseApp> _initialization = Firebase.initializeApp();
+
+  @override
+  Future<void> didChangeDependencies() async {
+    super.didChangeDependencies();
+    await Cache().init();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +27,9 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
+      routes: {
+        AuthScreen.route: (BuildContext context) => AuthScreen(),
+      },
       home: FutureBuilder(
         // Initialize FlutterFire:
         future: _initialization,
