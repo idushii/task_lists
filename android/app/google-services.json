@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "525701474721",
+    "firebase_url": "https://task-list-2013c.firebaseio.com",
+    "project_id": "task-list-2013c",
+    "storage_bucket": "task-list-2013c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:525701474721:android:24690c359d6aa743a503e0",
+        "android_client_info": {
+          "package_name": "com.tasks.list.mobile.app_tasks_lists"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "525701474721-gedh9k4jk3mic86spu7b18tr15m571uo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHC0R2sX2MHw6sKBQnNzucjVX7Hd5FHi0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "525701474721-gedh9k4jk3mic86spu7b18tr15m571uo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
